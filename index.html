@@ -1,0 +1,85 @@
+<html>
+
+<head>
+  <title>Realtime Face Recognition App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body style="background-color: violet;">
+  <center>
+    <h3 class="heading">
+      <br>Realtime Face Recognition App
+    <hr>
+    <center>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 heading_div">
+        Model is trained on
+        <br>
+        <div class="btn btn-info heading_div2">
+          younger sister &nbsp; |&nbsp; older sister
+        </div>
+      </div>
+    </center>
+    <br>
+    </h3>
+    <br><br>
+    <p class="btn btn-warning result_para_tag">Name:
+      <span id="result_face_name"></span>
+    </p>
+    <br><br>
+    <p class="btn btn-warning result_para_tag">Accuracy:
+      <span id="result_face_accuracy"></span>
+    </p>
+  </center>
+
+<script src="index.js"></script>
+</body>
+
+</html>
+
+
+
+<style>
+    .heading
+{
+    font-size: 23px;
+    background: rgb(237, 173, 240);
+    width: 100%;
+    margin: 0px;
+    box-shadow: 5px 5px 5px rgb(212, 8, 219);
+}
+.heading_div
+{
+    float: none;
+    background: rgb(168, 6, 201);
+    padding: 10px;
+    border-radius: 20px;
+    color: black;
+    box-shadow: 5px 5px 5px rgb(231, 131, 210);
+}
+.heading_div2
+{
+    font-size: 18px;
+}
+.result_para_tag
+{
+    box-shadow: 5px 5px 5px grey;
+    font-size: 20px;
+}
+
+canvas
+{
+    border: 5px solid white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px grey;
+    margin-top: 150px;
+}
+</style>
